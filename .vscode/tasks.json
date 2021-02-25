@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: g++ build active file",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-g",
+				"${file}","${fileDirname}/BaseExample.cpp","${fileDirname}/DateTime.cpp",
+				"${fileDirname}/CalendarFactory.cpp",
+				"${fileDirname}/CalendarController.cpp",
+				"${fileDirname}/WeeklyStart.cpp",
+				"${fileDirname}/QuickStart.cpp",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/g++"
+		}
+	]
+}

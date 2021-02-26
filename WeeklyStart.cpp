@@ -10,7 +10,7 @@ std::vector<std::shared_ptr<Calendar>> WeeklyStart::getEventsBetween(DateTime st
 
     // find weekday in next week in given timespan
     DateTime dt = start;
-    while(dt <= end)
+ /*  while(dt <= end)
     {
         if(dt.getWeekday() == _weekday)
         {
@@ -18,6 +18,6 @@ std::vector<std::shared_ptr<Calendar>> WeeklyStart::getEventsBetween(DateTime st
         }
         dt = dt.addDays(1);
     }
-    
+  */  
     return collection;
 }
